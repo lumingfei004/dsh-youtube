@@ -1,0 +1,44 @@
+{
+  "name": "dsh-youtube",
+  "version": "0.1.0",
+  "description": "YouTube read-only plugin for DeepSeek Harness: search videos, inspect details, pull subtitles. 给 DSH 助手看油管（只读）。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "tools",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "youtube", "yt-dlp"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumingfei004/dsh-youtube.git"
+  },
+  "homepage": "https://github.com/lumingfei004/dsh-youtube#readme",
+  "bugs": {
+    "url": "https://github.com/lumingfei004/dsh-youtube/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    }
+  },
+  "license": "MIT"
+}
