@@ -27,6 +27,9 @@
 ## 安装
 
 ```bash
+# npm（发布后）
+dsh plugin --profile desktop add dsh-youtube-readonly
+
 # 本地开发
 dsh plugin --profile desktop add "link:D:\path\to\dsh-youtube"
 

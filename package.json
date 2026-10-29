@@ -1,5 +1,5 @@
 {
-  "name": "dsh-youtube",
+  "name": "dsh-youtube-readonly",
   "version": "0.1.0",
   "description": "YouTube read-only plugin for DeepSeek Harness: search videos, inspect details, pull subtitles. 给 DSH 助手看油管（只读）。",
   "type": "module",

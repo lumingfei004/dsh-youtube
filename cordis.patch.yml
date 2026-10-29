@@ -1,4 +1,4 @@
 # dsh-youtube bundle patch：把插件插进 profile 的配置树
 - insert:
     - id: dsh-youtube
-      name: dsh-youtube
+      name: dsh-youtube-readonly
